@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#1d6846" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>David的公園挑戰</title>
+    <link rel="stylesheet" href="./game.css" />
+  </head>
+  <body>
+    <main id="game" class="game" aria-label="David的公園挑戰遊戲">
+      <canvas id="gameCanvas" width="450" height="800" tabindex="0" aria-label="可探索大林運動公園的遊戲畫面"></canvas>
+
+      <header class="hud">
+        <button id="soundButton" class="round-button" type="button" aria-label="切換背景音樂">♫</button>
+      </header>
+
+      <button id="attackButton" class="attack-button" type="button" aria-label="使用砸球技能">技能</button>
+      <button id="abandonTaskButton" class="abandon-task-button" type="button" hidden>放棄任務</button>
+
+      <section id="startScreen" class="start-screen">
+        <div class="logo-block">
+          <div class="title-lockup">
+            <h1><span>David的</span>公園挑戰</h1>
+            <div class="pixel-rule"></div>
+          </div>
+          <div class="credits-block" aria-label="製作資訊">
+            <p>致敬：楓之谷</p>
+            <p>製作：David、Codex</p>
+            <p>空間：Github</p>
+            <p>特別感謝：暑假</p>
+          </div>
+        </div>
+
+        <div class="controls-card">
+          <div><kbd>手機</kbd><p>點住David拖曳即可移動</p></div>
+          <div><kbd>電腦</kbd><p>按方向鍵即可移動，搭配滑鼠點</p></div>
+        </div>
+
+        <button id="startButton" class="start-button" type="button"><span>進入公園</span><b>▶</b></button>
+      </section>
+    </main>
+    <script src="./game.js?v=20260717-release"></script>
+  </body>
+</html>
